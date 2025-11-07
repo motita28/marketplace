@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Computer Marketplace</title>
+    <style>
+        /* --- General Page Styling --- */
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: linear-gradient(to right, red, black); /* Red to Black background */
+            color: white;
+        }
+
+        header {
+            background-color: black;
+            text-align: center;
+            padding: 20px;
+        }
+
+        header h1 {
+            color: red;
+            margin: 0;
+        }
+
+        /* --- Product Grid --- */
+        .product-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            padding: 40px;
+        }
+
+        .product {
+            background-color: rgba(255, 255, 255, 0.1);
+            border: 1px solid red;
+            border-radius: 10px;
+            padding: 15px;
+            text-align: center;
+            transition: 0.3s;
+        }
+
+        .product:hover {
+            background-color: rgba(255, 0, 0, 0.3);
+            transform: scale(1.05);
+        }
+
+        .product img {
+            width: 100%;
+            height: 180px;
+            object-fit: cover;
+            border-radius: 8px;
+        }
+
+        .price {
+            color: yellow;
+            font-weight: bold;
+        }
+
+        .buy-btn {
+            background-color: red;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            margin-top: 10px;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        .buy-btn:hover {
+            background-color: darkred;
+        }
+
+        footer {
+            background-color: black;
+            text-align: center;
+            padding: 10px;
+            color: gray;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>💻 Computer Marketplace 💻</h1>
+        <p>Find the best computers for your needs!</p>
+    </header>
+
+    <section class="product-container">
+        <!-- Product 1 -->
+        <div class="product">
+            <img src="pic1.jpg" alt="Gaming PC">
+            <h3>Gaming PC</h3>
+            <p>High performance for gamers and creators.</p>
+            <p class="price">$1200</p>
+            <button class="buy-btn">Buy Now</button>
+        </div>
+
+        <!-- Product 2 -->
+        <div class="product">
+            <img src="pic2.jpg" alt="Laptop">
+            <h3>Laptop</h3>
+            <p>Portable and powerful for your daily tasks.</p>
+            <p class="price">$800</p>
+            <button class="buy-btn">Buy Now</button>
+        </div>
+
+        <!-- Product 3 -->
+        <div class="product">
+            <img src="pic3.jpg" alt="Office PC">
+            <h3>Office PC</h3>
+            <p>Reliable desktop for work and productivity.</p>
+            <p class="price">$500</p>
+            <button class="buy-btn">Buy Now</button>
+        </div>
+    </section>
+
+    <footer>
+        <p>© 2025 Computer Marketplace | All Rights Reserved</p>
+    </footer>
+</body>
+</html>
